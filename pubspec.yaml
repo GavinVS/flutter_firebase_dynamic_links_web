@@ -1,0 +1,31 @@
+name: firebase_dynamic_links_web
+description: A new flutter plugin project.
+version: 0.0.1
+homepage:
+
+environment:
+  sdk: ">=2.16.0 <3.0.0"
+  flutter: ">=2.5.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_web_plugins:
+    sdk: flutter
+
+  firebase_core: ^1.12.0
+  firebase_dynamic_links_platform_interface: ^0.2.0+5
+  http: ^0.13.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^1.0.0
+  mockito: ^5.0.0
+
+flutter:
+  plugin:
+    platforms:
+      web:
+        pluginClass: FlutterFirebaseDynamicLinksPlugin
+        fileName: firebase_dynamic_links_web.dart
